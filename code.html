@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#a4b3a0", "on-tertiary-container": "#aeb0ab", "primary-fixed-dim": "#bbcbb7", "on-secondary-fixed-variant": "#75331e", "tertiary-container": "#41433f", "on-error": "#ffffff", "surface-container-low": "#f5f3f0", "surface-bright": "#fbf9f5", "on-secondary-container": "#783521", "surface-tint": "#546252", "surface-container-highest": "#e4e2df", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "background": "#fbf9f5", "secondary-container": "#ffa185", "inverse-on-surface": "#f2f1ed", "on-surface-variant": "#444842", "secondary": "#934a33", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "secondary-fixed-dim": "#ffb59f", "tertiary": "#2b2d2a", "error-container": "#ffdad6", "on-surface": "#1b1c1a", "outline-variant": "#c4c8c0", "outline": "#747871", "on-primary-fixed": "#121f12", "primary": "#223022", "surface": "#fbf9f5", "inverse-primary": "#bbcbb7", "surface-container": "#efeeea", "surface-container-high": "#e9e8e4", "secondary-fixed": "#ffdbd1", "tertiary-fixed": "#e2e3de", "surface-variant": "#e4e2df", "on-primary-fixed-variant": "#3c4a3b", "primary-fixed": "#d7e7d2", "inverse-surface": "#30312e", "primary-container": "#384637", "on-background": "#1b1c1a", "surface-dim": "#dbdad6", "tertiary-fixed-dim": "#c6c7c2", "on-error-container": "#93000a", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#454744", "on-secondary-fixed": "#3a0a00", "on-tertiary-fixed": "#1a1c19" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.75rem", "margin-desktop": "4rem", "space-xl": "3rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-desktop": "2.5rem", "margin-tablet": "2.5rem", "margin": "1.25rem", "gutter": "1.5rem" }, fontFamily: { "body-lg": ["DM Sans"], "body-sm": ["DM Sans"], "body-md": ["DM Sans"], "headline-lg": ["Newsreader"], "display-md": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "display-lg": ["Newsreader"], "headline-md": ["Newsreader"], "label-md": ["DM Sans"], "headline-sm": ["Newsreader"], "label-sm": ["DM Sans"], "display-md-mobile": ["Newsreader"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-md": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "display-md-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-surface-variant selection:text-on-surface"><header class="sticky top-0 z-50 w-full bg-surface/90 backdrop-blur-md border-b border-outline-variant/40"><div class="h-20 max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="MATERIA Architectural Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xoh5iFlTXoi8nRI9XZckO3jUfJEHhpfPuCIf7KOPc4KYdsv_QEKJwAll2zTfnWsLkywnGsOrH51ohWfJx9BqmZDrIKKmk-ksJYjKWcbP8Rqu9GLOKVM9iMwbg8grFYHZ_xPNjCnqoDT78QXGkay_9tVIbhKo28Zju4kUK2rofANlhQsJPCLkvrnUCUw2v0MYEBSvUcYodEw90aBA-gTzWqSsWfY3Y1ttHno3uPs-CYePzaSvXaOPr2dA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-normal text-on-surface tracking-tight leading-none">MATERIA</span><span class="font-label-sm text-label-sm tracking-widest text-on-surface-variant uppercase mt-1 leading-none">Architectural Systems</span></div></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-on-surface border-b border-on-surface pb-0.5"><a aria-current="page" class="font-body-sm transition-colors text-on-surface border-b border-on-surface pb-0.5" data-path="materials" href="#">Materials</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions" href="#">Solutions</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="sustainability" href="#">Sustainability</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a></nav><div class="flex items-center gap-6"><a class="hidden sm:inline-block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a><a class="inline-flex items-center justify-center px-space-md py-2.5 bg-tertiary text-on-tertiary font-label-md text-label-md tracking-wider transition-all duration-200 hover:bg-primary" data-path="start-a-conversation" href="#">Start a conversation →</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-8 pb-16 md:pt-12 md:pb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-end mb-12">
+<div class="lg:col-span-8 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 mb-6 px-3 py-1 bg-surface-container text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase">Sustainable construction materials</span>
+</div>
+<h1 class="font-headline-lg text-[44px] md:text-[60px] lg:text-[68px] leading-[1.12] text-on-surface tracking-tight font-normal max-w-3xl">
+            Materials for a more sustainable built environment.
+          </h1>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end pb-2">
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+            We supply thoughtfully developed construction materials that bring together performance, responsible sourcing and timeless design.
+          </p>
+<div class="flex flex-wrap items-center gap-6">
+<a class="inline-flex items-center justify-center px-6 py-3.5 bg-primary text-on-primary font-label-md text-label-md tracking-wider transition-colors hover:bg-primary-container" href="#materials-index">
+              Explore our materials →
+            </a>
+<a class="font-body-md text-body-md text-on-surface underline underline-offset-8 decoration-outline-variant hover:decoration-on-surface transition-colors" href="#projects">
+              View our projects
+            </a>
+</div>
+</div>
+</div>
+<!-- Hero Photograph Plate -->
+<div class="w-full bg-surface-container-low relative group">
+<div class="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden">
+<img alt="Pavilion for Material Innovation showcasing rammed earth wall, bio-concrete pillar, and weathered vertical Nordic timber cladding against a clear sky" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.01]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiGXTvXF9UJJDlMX1AT-hdKsXQCPDplu72pd6ROeLKd_qcmREG0SHx8jPupZTpayE7hkwTzd2uKfXf_JIdtwCf9amukI-FIxzuuCT0tTCNSJqEql8pD60mIimsIfWQ6LrqrrJ_OnxRUe7-aOgdpChtj14i7cpysduN6VnDiiJ6nXWbwoMg1wrUys-Mdh3TBrvXqtvQESfefZ_cf5yz9tQNujnfEKgsMlcEIOALpv5b5s5IoQudPg"/>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 px-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-2">
+<span class="w-1 h-1 bg-outline rounded-full"></span>
+            Plate 01 — Innovation Pavilion
+          </span>
+<span class="tracking-normal font-body-sm text-body-sm text-on-surface-variant">
+            Rammed Earth, Low-Carbon Geopolymer &amp; Nordic Larch Façade
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Introduction Section -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-5 pr-0 lg:pr-8">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase block mb-4">Philosophy &amp; Scale</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[40px] md:leading-[48px] text-on-surface font-normal">
+            Better materials create better places.
+          </h2>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<div class="md:col-span-7 space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              We work with architects, developers, contractors and designers across 28 global markets to provide materials that balance structural performance, architectural aesthetics and environmental responsibility.
+            </p>
+<div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-on-surface tracking-wider uppercase underline underline-offset-4 decoration-outline hover:text-secondary transition-colors" href="#responsibility">
+                Our ecological framework →
+              </a>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="bg-surface p-3 shadow-sm">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img alt="Close-up tactile study of cellular porous limestone and bio-aggregate aggregate block with cast metallic element" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARJesOa5fzIwda48-X9Sn5JGx9hiGKVSsP0uKtauryTIjG0iDSyEazyf1YgfYvgmh1q8Ic7hGbZxO3VR3V6a4kTrChETd90f96Gu-XqsmyMM7di79jL6TmLFSvfSN91au7Rfyg0TXulVTRriYfYdsRAZ7bIR8K_dG1fpM_E1vGBTodcw63BiwlUbhNldcizRM2SxdEhgF3XpNKTrooGa1Ve_N7ZeMGpZFry7WOwReJyqSYb-rshNs"/>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2 px-1">Specimen Matrix 08 — Travertine &amp; Composite</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Materials Catalog -->
+<section class="w-full py-24 bg-surface" id="materials-index">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase block mb-2">Architectural Monograph</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[44px] md:leading-tight text-on-surface font-normal">
+            Our materials
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Structured into five mineral and circular families, engineered to meet demanding European acoustic, fire and lifecycle benchmarks.
+        </p>
+</div>
+<!-- Architectural List Rows -->
+<div class="w-full space-y-3" id="material-accordion">
+<!-- Item 01 -->
+<div class="group bg-surface-container-low transition-all duration-300 hover:bg-surface-container">
+<div class="p-6 md:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 cursor-pointer">
+<div class="flex items-baseline gap-6 md:gap-12 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">01</span>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Recycled &amp; Circular Materials
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                  Post-industrial ceramic aggregates, reclaimed structural timber, and modular circular masonry formulated for clean disassembly.
+                </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 lg:justify-end">
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">82% Recycled Content</span>
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cradle to Cradle</span>
+<span class="w-10 h-10 flex items-center justify-center bg-surface text-on-surface group-hover:bg-primary group-hover:text-on-primary transition-colors ml-2">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Item 02 -->
+<div class="group bg-surface-container-low transition-all duration-300 hover:bg-surface-container">
+<div class="p-6 md:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 cursor-pointer">
+<div class="flex items-baseline gap-6 md:gap-12 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">02</span>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Natural &amp; Earth-Based Systems
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                  Stabilized rammed earth prefabricated slabs, raw non-quarried limestone ashlar, and acoustic cork insulation composites.
+                </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 lg:justify-end">
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Zero Binder Toxins</span>
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Passivhaus Ready</span>
+<span class="w-10 h-10 flex items-center justify-center bg-surface text-on-surface group-hover:bg-primary group-hover:text-on-primary transition-colors ml-2">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Item 03 -->
+<div class="group bg-surface-container-low transition-all duration-300 hover:bg-surface-container">
+<div class="p-6 md:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 cursor-pointer">
+<div class="flex items-baseline gap-6 md:gap-12 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">03</span>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Low-Carbon Mineral Systems
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                  Pozzolanic ultra-low-embodied binders and inorganic geopolymer slabs designed for long-span structural cladding.
+                </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 lg:justify-end">
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">A1 Non-Combustible</span>
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">-62% Embodied CO₂</span>
+<span class="w-10 h-10 flex items-center justify-center bg-surface text-on-surface group-hover:bg-primary group-hover:text-on-primary transition-colors ml-2">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Item 04 -->
+<div class="group bg-surface-container-low transition-all duration-300 hover:bg-surface-container">
+<div class="p-6 md:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 cursor-pointer">
+<div class="flex items-baseline gap-6 md:gap-12 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">04</span>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Bio-Based Architectural Finishes
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                  Silicate breathable mineral coats, micro-porous slaked lime renders, and pure plant-derived exterior wood weather-stains.
+                </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 lg:justify-end">
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Vapour Permeable</span>
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Zero VOC</span>
+<span class="w-10 h-10 flex items-center justify-center bg-surface text-on-surface group-hover:bg-primary group-hover:text-on-primary transition-colors ml-2">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Item 05 -->
+<div class="group bg-surface-container-low transition-all duration-300 hover:bg-surface-container">
+<div class="p-6 md:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 cursor-pointer">
+<div class="flex items-baseline gap-6 md:gap-12 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">05</span>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  High-Performance Thermal Facades
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                  Vacuum-insulated aerated terracotta panels and back-ventilated composite stone rainscreens with integrated anchors.
+                </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 lg:justify-end">
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">U-Value 0.11 W/m²K</span>
+<span class="px-3 py-1 bg-surface font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">ISO 14025</span>
+<span class="w-10 h-10 flex items-center justify-center bg-surface text-on-surface group-hover:bg-primary group-hover:text-on-primary transition-colors ml-2">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specimen Drawer / Featured Spec -->
+<section class="w-full bg-surface-container py-20">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="bg-surface p-8 md:p-12 shadow-sm">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end pb-8 gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Specimen Specification</span>
+<span class="text-outline text-[12px]">•</span>
+<span class="font-label-sm text-label-sm text-primary font-medium tracking-wider">SYS-GEO-04</span>
+</div>
+<h3 class="font-headline-md text-headline-md md:text-headline-lg text-on-surface font-normal">
+              LithoForm Bio-Aggregate 04
+            </h3>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>EPD-verified batch: #2026-CH-91</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
+<!-- Left Column: Specs Matrix -->
+<div class="lg:col-span-7 space-y-4">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 bg-surface-container-low">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Density</span>
+<span class="font-body-lg text-body-lg text-on-surface font-medium">1,850 <span class="font-body-sm text-body-sm text-on-surface-variant">kg/m³</span></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Embodied Carbon</span>
+<span class="font-body-lg text-body-lg text-secondary font-medium">-42 <span class="font-body-sm text-body-sm text-on-surface-variant">kg CO₂e/m²</span></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Strength</span>
+<span class="font-body-lg text-body-lg text-on-surface font-medium">52 <span class="font-body-sm text-body-sm text-on-surface-variant">MPa</span></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Fire Classification</span>
+<span class="font-body-lg text-body-lg text-on-surface font-medium">Class A1</span>
+</div>
+</div>
+<!-- Detailed breakdown list -->
+<div class="space-y-2 pt-2">
+<div class="flex justify-between items-center py-2.5 px-3 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard Dimensions</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">1200 × 600 × 30 mm (Bespoke modules to 3200mm)</span>
+</div>
+<div class="flex justify-between items-center py-2.5 px-3 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acoustic Absorption (αw)</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">0.75 (Micro-perforated backing)</span>
+</div>
+<div class="flex justify-between items-center py-2.5 px-3 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Freeze / Thaw Resistance</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">EN 12371 Passed (100 Cycles)</span>
+</div>
+<div class="flex justify-between items-center py-2.5 px-3 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Secondary Raw Material</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">78% Dolomite waste aggregate &amp; blast mineral</span>
+</div>
+</div>
+<div class="pt-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase block mb-3">Available Textural Finishes</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">Honed Matte</button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface font-label-sm text-label-sm uppercase tracking-wider hover:bg-surface-variant transition-colors">Bush-hammered</button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface font-label-sm text-label-sm uppercase tracking-wider hover:bg-surface-variant transition-colors">Flamed Relief</button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface font-label-sm text-label-sm uppercase tracking-wider hover:bg-surface-variant transition-colors">Wire-cut Raked</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Specimen & Actions -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+<div class="aspect-[4/3] w-full bg-surface-container relative overflow-hidden">
+<img alt="LithoForm Bio-Aggregate sample block with coarse texture, neutral grey mineral tone, and slate companion element" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARJesOa5fzIwda48-X9Sn5JGx9hiGKVSsP0uKtauryTIjG0iDSyEazyf1YgfYvgmh1q8Ic7hGbZxO3VR3V6a4kTrChETd90f96Gu-XqsmyMM7di79jL6TmLFSvfSN91au7Rfyg0TXulVTRriYfYdsRAZ7bIR8K_dG1fpM_E1vGBTodcw63BiwlUbhNldcizRM2SxdEhgF3XpNKTrooGa1Ve_N7ZeMGpZFry7WOwReJyqSYb-rshNs"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 font-label-sm text-label-sm text-on-surface">
+                Sample ref: #LF-AGG-04M
+              </div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-2">
+<button class="flex-1 px-5 py-3.5 bg-primary text-on-primary font-label-md text-label-md tracking-wider transition-colors hover:bg-primary-container text-center">
+                Request material samples →
+              </button>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-surface-container text-on-surface font-label-md text-label-md tracking-wider hover:bg-surface-variant transition-colors text-center" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                Download EPD / PDF
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sustainability Framework (6 Practical Pillars) -->
+<section class="w-full py-24 bg-surface" id="responsibility">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-2xl mb-16">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase block mb-2">Accountability</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[44px] md:leading-tight text-on-surface font-normal">
+          Built with responsibility in mind.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 leading-relaxed">
+          Circular design is not an afterthought; it is our primary engineering requirement. We subject all material lines to lifecycle carbon assessments.
+        </p>
+</div>
+<!-- 6 Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="p-8 bg-surface-container-low space-y-4 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-surface flex items-center justify-center text-primary">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.5]" viewbox="0 0 24 24">
+<path d="M12 3v18m0-18l-8 8m8-8l8 8M4 21h16" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">1. Responsible Sourcing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            100% verified traceability back to regenerative forestry (FSC/PEFC) and single-origin regional European limestone quarries within 300km of our production nodes.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-8 bg-surface-container-low space-y-4 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-surface flex items-center justify-center text-primary">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.5]" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M12 7v5l3 3" stroke-linecap="round"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">2. Low-Carbon Production</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Ambient-temperature geopolymer curing eliminates traditional rotary kilns, achieving a verified -58% average embodied carbon footprint compared with Portland standards.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-8 bg-surface-container-low space-y-4 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-surface flex items-center justify-center text-primary">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.5]" viewbox="0 0 24 24">
+<path d="M3 6l9-4 9 4v6c0 5.25-3.75 10.15-9 12-5.25-1.85-9-6.75-9-12V6z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">3. Durability &amp; Resilience</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Engineered for a century of service life. High flexural modulus and natural weathering patinas mitigate routine maintenance and chemical biocides.
+          </p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-8 bg-surface-container-low space-y-4 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-surface flex items-center justify-center text-primary">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.5]" viewbox="0 0 24 24">
+<path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">4. High Recycled Content</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Up to 88% verified post-industrial feedstocks, repurposing porcelain offcuts, slag vitrification, and mineral quarry tailings previously bound for landfills.
+          </p>
+</div>
+<!-- Pillar 5 -->
+<div class="p-8 bg-surface-container-low space-y-4 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-surface flex items-center justify-center text-primary">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.5]" viewbox="0 0 24 24">
+<path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">5. Circular End-of-Life</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Dry-joint anchoring mechanics and bio-compatible matrices ensure 100% mechanical recyclability into sub-base aggregates or biological reintegration.
+          </p>
+</div>
+<!-- Pillar 6 -->
+<div class="p-8 bg-surface-container-low space-y-4 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-surface flex items-center justify-center text-primary">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.5]" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">6. Rigorous Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Third-party certified ISO 14025 Environmental Product Declarations (Type III EPDs) independently audited by IBU (Institut Bauen und Umwelt e.V.).
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Architectural Projects -->
+<section class="w-full py-24 bg-surface-container-low" id="projects">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase block mb-2">Realized Work</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[44px] md:leading-tight text-on-surface font-normal">
+            Selected projects
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          A showcase of built environments specified with MATERIA surfaces, completed in collaboration with international studios.
+        </p>
+</div>
+<!-- Asymmetric Editorial Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Project 1 (Dominant Left Card) -->
+<div class="lg:col-span-7 flex flex-col space-y-4 group">
+<div class="aspect-[16/10] w-full overflow-hidden bg-surface-container relative">
+<img alt="House Between Pines residential pavilion surrounded by forest featuring textured rammed earth and timber batten facades" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiGXTvXF9UJJDlMX1AT-hdKsXQCPDplu72pd6ROeLKd_qcmREG0SHx8jPupZTpayE7hkwTzd2uKfXf_JIdtwCf9amukI-FIxzuuCT0tTCNSJqEql8pD60mIimsIfWQ6LrqrrJ_OnxRUe7-aOgdpChtj14i7cpysduN6VnDiiJ6nXWbwoMg1wrUys-Mdh3TBrvXqtvQESfefZ_cf5yz9tQNujnfEKgsMlcEIOALpv5b5s5IoQudPg"/>
+<div class="absolute top-4 right-4 px-3 py-1 bg-surface/90 backdrop-blur-sm font-label-sm text-label-sm text-on-surface">
+              Completed 2026
+            </div>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">
+                House Between Pines
+              </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Scandinavia</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 text-on-surface-variant font-body-sm text-body-sm">
+<span>Architect: <strong class="text-on-surface font-normal">Studio Nørd</strong></span>
+<span>•</span>
+<span>Materials: Treated Arctic Larch &amp; Rammed Earth Matrix</span>
+</div>
+</div>
+</div>
+<!-- Right Stack: Projects 2 & 3 -->
+<div class="lg:col-span-5 flex flex-col space-y-12">
+<!-- Project 2 -->
+<div class="flex flex-col space-y-3 group">
+<div class="aspect-[16/9] w-full overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Modern monolithic museum facade constructed from textured light grey pozzolanic stone slabs under a calm overcast Swiss sky with sharp architectural shadow lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfSgavrUAHBiqaWTyVMf5RIMAtu0sOzK1W15fUhxBG8kxbNbyH2_Kh4AOv0qDE4Rkb8wfKDHNVc43Mr31VBr1ApaihGU-_UxwkrlWt_sQXNVLbC0WRFBt6UjSgJVAMcFM5s_wt3ThdN03Cxn8j9U7hIiur1beDFYPrwSY6rtzm1RxSNkTV4wMV7L-e8auGJLgKqPvQvUabWyi3kleRtpXMd1--OTiScaesBpXv5XHHV1ZSI0gzI5c"/>
+<div class="absolute top-3 right-3 px-2.5 py-0.5 bg-surface/90 backdrop-blur-sm font-label-sm text-label-sm text-on-surface">
+                2025
+              </div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">
+                  Museum of Geology &amp; Strata
+                </h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Basel, CH</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Architect: <strong class="text-on-surface font-normal">Herzog &amp; Partner</strong> • Low-Carbon Pozzolanic Cladding
+              </p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="flex flex-col space-y-3 group">
+<div class="aspect-[16/9] w-full overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Quiet civic community pavilion in Kyoto featuring textured aggregate stone walls, charred timber eaves, and a zen gravel courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt2S4EB6aiE7Kat3S2WzedbI4N8MLe4JPlsw1UuMF0uiQ1l7cRQI9YPlHyRdqNExROVdrjww3LHUW2s1_m2eL4tDHG-98f5ydLRQHMjXNYqXlzVd5bily8RfqIT7aw7_TK_O5-k7mxUhGGEqc2fng1nME_vj4Jau1a7coRC1mG7cIjR8yBX7zHVd_vHkvVWKVj2z2RGTdjM_cGBJJh4YNXiGRgtqN6tmTHLxghYCcBlNhvwci3KZU"/>
+<div class="absolute top-3 right-3 px-2.5 py-0.5 bg-surface/90 backdrop-blur-sm font-label-sm text-label-sm text-on-surface">
+                2026
+              </div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">
+                  Atelier Civic Pavilion
+                </h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kyoto, JP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Architect: <strong class="text-on-surface font-normal">Kengo Mori Studio</strong> • Reclaimed Mineral Aggregates
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Material Storytelling Section -->
+<section class="w-full py-24 bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-6 relative">
+<div class="aspect-square w-full max-w-lg bg-surface-container overflow-hidden shadow-sm">
+<img alt="Artisan hands examining macro mineral aggregate composition and honed stone samples in natural light studio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARJesOa5fzIwda48-X9Sn5JGx9hiGKVSsP0uKtauryTIjG0iDSyEazyf1YgfYvgmh1q8Ic7hGbZxO3VR3V6a4kTrChETd90f96Gu-XqsmyMM7di79jL6TmLFSvfSN91au7Rfyg0TXulVTRriYfYdsRAZ7bIR8K_dG1fpM_E1vGBTodcw63BiwlUbhNldcizRM2SxdEhgF3XpNKTrooGa1Ve_N7ZeMGpZFry7WOwReJyqSYb-rshNs"/>
+</div>
+<div class="absolute -bottom-6 -right-4 md:right-8 bg-surface p-6 shadow-md max-w-xs hidden sm:block">
+<span class="font-headline-md text-headline-md text-primary block leading-none mb-1">0%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Synthetic resins or petrochemical polymers utilized in our mineral binding matrix.
+            </p>
+</div>
+</div>
+<div class="lg:col-span-6 space-y-6 pt-8 lg:pt-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase block">Provenance &amp; Process</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[44px] md:leading-tight text-on-surface font-normal">
+            From raw material to remarkable architecture.
+          </h2>
+<div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p>
+              Our process begins inside historic quarry beds and industrial processing centers throughout the Alpine and Nordic corridors. By reclaiming discarded sediment, fine stone slimes, and inert tailings, we reformulate stone with nature-mimicking mineral carbonation.
+            </p>
+<p class="font-body-md text-body-md">
+              The result is a surface with the depth, nuance, and durability of millennia-old sedimentary stone, produced with an energy fraction of traditional masonry.
+            </p>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-on-surface tracking-wider uppercase underline underline-offset-4 decoration-outline hover:text-primary transition-colors" href="#">
+              Read our material monographs →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach & Key Metrics -->
+<section class="w-full bg-primary text-on-primary py-20">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16">
+<div class="space-y-1">
+<span class="font-headline-lg text-[48px] md:text-[56px] text-primary-fixed-dim font-normal block leading-none">15+</span>
+<span class="font-label-md text-label-md tracking-wider text-on-primary-container uppercase">Years of research</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/80 pt-1">Dedicated to sustainable mineral matrix development.</p>
+</div>
+<div class="space-y-1">
+<span class="font-headline-lg text-[48px] md:text-[56px] text-primary-fixed-dim font-normal block leading-none">28</span>
+<span class="font-label-md text-label-md tracking-wider text-on-primary-container uppercase">Global markets</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/80 pt-1">Direct specification distribution across Europe &amp; Asia.</p>
+</div>
+<div class="space-y-1">
+<span class="font-headline-lg text-[48px] md:text-[56px] text-primary-fixed-dim font-normal block leading-none">240+</span>
+<span class="font-label-md text-label-md tracking-wider text-on-primary-container uppercase">Built projects</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/80 pt-1">From civic museums to sustainable private residences.</p>
+</div>
+<div class="space-y-1">
+<span class="font-headline-lg text-[48px] md:text-[56px] text-primary-fixed-dim font-normal block leading-none">50+</span>
+<span class="font-label-md text-label-md tracking-wider text-on-primary-container uppercase">Certified systems</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/80 pt-1">EPD, Cradle to Cradle, and ISO 14025 compliant.</p>
+</div>
+</div>
+<div class="pt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-on-primary-container font-label-sm text-label-sm">
+<span class="uppercase tracking-widest text-primary-fixed-dim">Distribution Hubs &amp; Technical Ateliers:</span>
+<div class="flex flex-wrap gap-x-6 gap-y-2 text-on-primary">
+<span>Zürich</span>
+<span>•</span>
+<span>Copenhagen</span>
+<span>•</span>
+<span>Milan</span>
+<span>•</span>
+<span>London</span>
+<span>•</span>
+<span>Tokyo</span>
+<span>•</span>
+<span>New York</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Stakeholder Groups: Built For People Shaping The Built Environment -->
+<section class="w-full py-20 bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-2xl mb-12">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase block mb-2">Collaboration</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-normal">
+          Built for people shaping the future of the built environment.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="p-6 bg-surface-container-low flex flex-col justify-between h-48">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Architects</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">BIM libraries, customized finishes, and sample curation.</p>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low flex flex-col justify-between h-48">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Engineers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compressive calculations, load tables, and fire performance certs.</p>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low flex flex-col justify-between h-48">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Developers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">LEED &amp; BREEAM point optimization and asset longevity.</p>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low flex flex-col justify-between h-48">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">04</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Contractors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reliable European supply chains, lead times, and on-site support.</p>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low flex flex-col justify-between h-48">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">05</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Façade Teams</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Anchoring details, thermal bridge analysis, and testing reports.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Calm Call-to-Action -->
+<section class="w-full py-24 bg-surface-container">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-3xl mx-auto text-center space-y-6">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">Begin Specification</span>
+<h2 class="font-headline-lg text-[40px] md:text-[52px] leading-tight text-on-surface font-normal">
+          Let's build something better.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-xl mx-auto">
+          Tell us about your upcoming project, material performance specifications, or embodied carbon reduction targets.
+        </p>
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-8 py-4 bg-tertiary text-on-tertiary font-label-md text-label-md tracking-wider transition-colors hover:bg-primary" href="#">
+            Start a conversation →
+          </a>
+<a class="w-full sm:w-auto px-8 py-4 bg-surface text-on-surface font-label-md text-label-md tracking-wider hover:bg-surface-variant transition-colors shadow-sm" href="#">
+            Request a sample box →
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for specimen buttons
+  document.addEventListener('DOMContentLoaded', () => {
+    const finishButtons = document.querySelectorAll('button:has-text("Bush-hammered"), button:has-text("Honed Matte"), button:has-text("Flamed Relief"), button:has-text("Wire-cut Raked")');
+    const catalogRows = document.querySelectorAll('#material-accordion > div');
+    
+    catalogRows.forEach(row => {
+      row.addEventListener('click', () => {
+        row.classList.toggle('ring-1');
+        row.classList.toggle('ring-primary/20');
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-space-xl"><div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-gutter-desktop pb-space-xl border-b border-outline-variant/30"><div class="lg:col-span-2 space-y-space-md pr-space-md"><div class="flex items-center gap-3"><img alt="MATERIA Architectural Logo" class="h-6 w-auto object-contain opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1Xoh5iFlTXoi8nRI9XZckO3jUfJEHhpfPuCIf7KOPc4KYdsv_QEKJwAll2zTfnWsLkywnGsOrH51ohWfJx9BqmZDrIKKmk-ksJYjKWcbP8Rqu9GLOKVM9iMwbg8grFYHZ_xPNjCnqoDT78QXGkay_9tVIbhKo28Zju4kUK2rofANlhQsJPCLkvrnUCUw2v0MYEBSvUcYodEw90aBA-gTzWqSsWfY3Y1ttHno3uPs-CYePzaSvXaOPr2dA"/><span class="font-headline-sm text-headline-sm font-normal text-on-surface">MATERIA</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed">Monolithic surfaces and structural circular matter engineered for European architecture, mineral heritage, and acoustic integrity.</p><div class="pt-space-xs"><p class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant mb-1">Specification &amp; Procurement</p><a class="font-body-sm text-body-sm text-on-surface underline underline-offset-4 decoration-outline-variant hover:decoration-on-surface transition-colors" href="mailto:procurement@materia-arche.com">procurement@materia-arche.com</a></div></div><div class="space-y-space-sm"><p class="font-label-md text-label-md tracking-wider uppercase text-on-surface font-semibold">Catalogue</p><ul class="space-y-2.5"><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="materials" href="#">Materials</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions" href="#">Solutions</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="sustainability" href="#">Sustainability</a></li></ul></div><div class="space-y-space-sm"><p class="font-label-md text-label-md tracking-wider uppercase text-on-surface font-semibold">Atelier</p><ul class="space-y-2.5"><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bim-cad-library" href="#">BIM &amp; CAD Files</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="specifications" href="#">Spec Drawer</a></li></ul></div><div class="space-y-space-sm"><p class="font-label-md text-label-md tracking-wider uppercase text-on-surface font-semibold">Headquarters</p><div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant"><p><strong class="text-on-surface font-medium block">Zürich</strong>Gotthardstrasse 26, 8002</p><p><strong class="text-on-surface font-medium block">Copenhagen</strong>Bredgade 41, 1260</p><p><strong class="text-on-surface font-medium block">Milan</strong>Via Solferino 18, 20121</p></div></div><div class="space-y-space-sm"><p class="font-label-md text-label-md tracking-wider uppercase text-on-surface font-semibold">Certifications</p><div class="flex flex-col gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="inline-flex items-center px-2.5 py-1 bg-surface border border-outline-variant/40 w-fit text-on-surface tracking-wider">EPD Certified</span><span class="inline-flex items-center px-2.5 py-1 bg-surface border border-outline-variant/40 w-fit text-on-surface tracking-wider">Cradle to Cradle Gold</span><span class="inline-flex items-center px-2.5 py-1 bg-surface border border-outline-variant/40 w-fit text-on-surface tracking-wider">ISO 14025</span></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 MATERIA Architectural Systems. All rights reserved.</p><div class="flex items-center gap-6 font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="environmental-transparency" href="#">Environmental Transparency</a><a class="hover:text-on-surface transition-colors" data-path="terms" href="#">Terms of Specification</a><a class="hover:text-on-surface transition-colors" data-path="privacy" href="#">Privacy Policy</a></div></div></div></footer></body></html>

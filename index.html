@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evolve Edge Services — Coming Soon</title>
+<meta name="description" content="Evolve Edge Services is preparing a new platform for carbon accounting, emissions verification and data-driven environmental reporting. Measure, verify and report with confidence — launching 01 December 2026."/>
+<link rel="icon" href="assets/mark-dark.png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } }
+::-webkit-scrollbar { display: none; }
+.plate-grid { background-image: linear-gradient(to right, rgba(244,242,236,0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(244,242,236,0.07) 1px, transparent 1px); background-size: 56px 56px; }
+.hero-grid { background-image: linear-gradient(to right, rgba(11,47,37,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(11,47,37,0.05) 1px, transparent 1px); background-size: 56px 56px; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(.72); } }
+.status-dot { animation: pulse-dot 1.8s ease-in-out infinite; }
+/* Keep "CONSTRUCTION" inside the clipped hero on very narrow viewports (<=374px) */
+@media (max-width: 374px) { h1.hero-title { font-size: 2.2rem; } }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        isabelline: "#F4F2EC",
+        tartan: "#0B2F25",
+        unique: "#174B39",
+        mint: "#7BBA40",
+        iris: "#A8BC73"
+      },
+      borderRadius: { "DEFAULT": "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+      spacing: {
+        "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.75rem", "space-xl": "3rem",
+        margin: "1.25rem", "margin-tablet": "2.5rem", "margin-desktop": "4rem",
+        gutter: "1.5rem", "gutter-desktop": "2.5rem"
+      },
+      fontFamily: { sans: ["Geist", "ui-sans-serif", "system-ui", "sans-serif"] }
+    }
+  }
+};
+</script>
+</head>
+
+<body class="bg-isabelline font-sans text-tartan antialiased selection:bg-tartan selection:text-isabelline">
+
+<!-- ===================== HEADER ===================== -->
+<header class="sticky top-0 z-50 w-full bg-isabelline/92 backdrop-blur-md border-b border-tartan/12">
+  <div class="h-20 max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3 py-1 pr-6" aria-label="Evolve Edge Services — home">
+      <img alt="Evolve Edge Services logo" class="h-8 w-auto object-contain" src="assets/logo-h-dark.png"/>
+    </a>
+    <nav class="hidden sm:flex items-center gap-8" aria-label="Primary">
+      <a class="text-[13px] uppercase tracking-[0.14em] text-tartan/70 hover:text-tartan transition-colors" href="#status">Status</a>
+      <a class="text-[13px] uppercase tracking-[0.14em] text-tartan/70 hover:text-tartan transition-colors" href="#platform">Platform</a>
+      <a class="text-[13px] uppercase tracking-[0.14em] text-tartan/70 hover:text-tartan transition-colors" href="#notify">Contact</a>
+    </nav>
+    <div class="flex items-center gap-6">
+      <span class="hidden lg:inline text-[13px] uppercase tracking-[0.14em] text-tartan/65">01 Dec 2026 · 09:00 CET</span>
+      <a class="inline-flex items-center justify-center px-5 py-2.5 bg-tartan text-isabelline text-[13px] font-medium uppercase tracking-[0.12em] transition-colors hover:bg-unique" href="#notify">Notify me&nbsp;→</a>
+    </div>
+  </div>
+</header>
+
+<main class="w-full pt-20">
+
+<!-- ===================== HERO ===================== -->
+<section class="relative w-full overflow-hidden">
+  <!-- Environmental element: topographic lines, large scale, cropped, low opacity -->
+  <img aria-hidden="true" class="pointer-events-none select-none absolute right-[-12%] bottom-[-38%] w-[120vw] max-w-none opacity-[0.10] md:w-[85vw] md:right-[-8%] md:bottom-[-45%]" src="assets/topo-dark.png"/>
+  <div class="relative max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-16 pb-20 md:pt-24 md:pb-28">
+    <div class="max-w-5xl">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="status-dot w-2 h-2 rounded-full bg-mint" aria-hidden="true"></span>
+        <span class="text-[12px] uppercase tracking-[0.22em] text-tartan/70">In preparation · Evolve Edge Services</span>
+      </div>
+      <h1 class="hero-title font-semibold uppercase tracking-tight leading-[1.03] text-[clamp(2.7rem,7vw,5.2rem)] text-tartan">
+        Website<br/>Under Construction
+      </h1>
+      <p class="mt-8 max-w-2xl text-[17px] leading-relaxed text-tartan/75">
+        Evolve Edge Services is preparing a new platform for carbon accounting, emissions verification
+        and data-driven environmental reporting — built so every figure stands up to scrutiny.
+        Measure, verify and report with confidence.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+        <a class="inline-flex items-center justify-center px-7 py-4 bg-tartan text-isabelline text-[13px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-unique" href="#notify">Join the launch list&nbsp;→</a>
+        <a class="text-[15px] text-tartan underline underline-offset-8 decoration-tartan/25 hover:decoration-tartan transition-colors" href="#status">View preparation status</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LAUNCH BAND: LOTTIE PLATE + COUNTDOWN ===================== -->
+<section class="relative w-full bg-unique overflow-hidden">
+  <!-- Environmental element: flow lines, cropped, low opacity -->
+  <img aria-hidden="true" class="pointer-events-none select-none absolute left-[-10%] top-[-30%] w-[90vw] max-w-none opacity-[0.10]" src="assets/flow-light.png"/>
+  <div class="relative max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-16 md:py-20">
+    <!-- LAUNCH SEQUENCE LABEL ROW — disabled (launch date unconfirmed)
+    <div class="flex flex-wrap items-baseline justify-between gap-4 mb-8">
+      <span class="text-[12px] uppercase tracking-[0.22em] text-iris">Launch sequence</span>
+      <span class="text-[12px] uppercase tracking-[0.18em] text-isabelline/60">Public release — 01 December 2026, 09:00 CET</span>
+    </div>
+    -->
+
+    <!-- Calibration plate: Lottie drafting animation -->
+    <div class="w-full border border-isabelline/15">
+      <div class="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden plate-grid">
+        <div id="lottie-plate" class="absolute inset-0"></div>
+        <svg id="fallback-plate" class="absolute inset-0 w-full h-full hidden" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 400">
+          <g stroke="#F4F2EC" stroke-opacity="0.12" stroke-width="1">
+            <path d="M80 90 H740"/><path d="M80 160 H740"/><path d="M80 230 H740"/><path d="M80 300 H740"/>
+          </g>
+          <g stroke="#F4F2EC" stroke-opacity="0.7" stroke-width="2.5">
+            <path d="M80 60 V340 H740"/>
+          </g>
+          <path d="M90 320 L230 275 L315 295 L440 215 L560 235 L700 95" stroke="#F4F2EC" stroke-width="3" stroke-linejoin="round"/>
+          <g fill="#F4F2EC">
+            <circle cx="90" cy="320" r="5"/><circle cx="230" cy="275" r="5"/><circle cx="315" cy="295" r="5"/>
+            <circle cx="440" cy="215" r="5"/><circle cx="560" cy="235" r="5"/>
+          </g>
+          <circle cx="700" cy="95" r="7" fill="#7BBA40"/>
+          <circle cx="700" cy="95" r="16" stroke="#7BBA40" stroke-width="2"/>
+          <g stroke="#F4F2EC" stroke-opacity="0.35" stroke-width="1.5">
+            <path d="M80 370 H740"/><path d="M80 362 V378"/><path d="M740 362 V378"/>
+          </g>
+        </svg>
+        <span class="absolute top-4 left-4 text-[11px] uppercase tracking-[0.18em] text-isabelline/80">Plate 01 — Calibration study · Emissions curve</span>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 py-4 px-4 border-t border-isabelline/15 text-isabelline/55 text-[11px] uppercase tracking-[0.18em]">
+        <span>Work in progress — data model v0.9</span>
+        <span class="tracking-[0.14em]">Verified reporting, being drafted line by line</span>
+      </div>
+    </div>
+
+    <!-- Countdown (marker kept outside the wrapper — HTML comments cannot nest) -->
+    <!-- COUNTDOWN GRID — disabled (launch date unconfirmed)
+    <div class="mt-12 border-t border-b border-isabelline/15 grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 divide-isabelline/15">
+      <div class="py-7 px-2 md:px-6 md:border-r md:border-isabelline/15">
+        <span class="block text-[11px] uppercase tracking-[0.22em] text-iris mb-3">Days</span>
+        <span id="cd-days" class="block font-semibold leading-none tracking-tight text-[clamp(2.4rem,5.5vw,4rem)] text-isabelline tabular-nums">—</span>
+      </div>
+      <div class="py-7 px-2 md:px-6 md:border-r md:border-isabelline/15">
+        <span class="block text-[11px] uppercase tracking-[0.22em] text-iris mb-3">Hours</span>
+        <span id="cd-hours" class="block font-semibold leading-none tracking-tight text-[clamp(2.4rem,5.5vw,4rem)] text-isabelline tabular-nums">—</span>
+      </div>
+      <div class="py-7 px-2 md:px-6 md:border-r md:border-isabelline/15">
+        <span class="block text-[11px] uppercase tracking-[0.22em] text-iris mb-3">Minutes</span>
+        <span id="cd-minutes" class="block font-semibold leading-none tracking-tight text-[clamp(2.4rem,5.5vw,4rem)] text-isabelline tabular-nums">—</span>
+      </div>
+      <div class="py-7 px-2 md:px-6">
+        <span class="block text-[11px] uppercase tracking-[0.22em] text-iris mb-3">Seconds</span>
+        <span id="cd-seconds" class="block font-semibold leading-none tracking-tight text-[clamp(2.4rem,5.5vw,4rem)] text-mint tabular-nums">—</span>
+      </div>
+    </div>
+    -->
+
+    <!-- Replacement copy in place of the countdown -->
+    <div class="mt-12 border-t border-b border-isabelline/15 py-10">
+      <p class="text-[clamp(1.4rem,3vw,2rem)] font-semibold uppercase tracking-tight text-isabelline">Certificates on the way...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PREPARATION STATUS ===================== -->
+<section class="relative w-full bg-isabelline overflow-hidden" id="status">
+  <!-- Technical element: grid calibration, background usage, low opacity -->
+  <img aria-hidden="true" class="pointer-events-none select-none absolute right-[-14%] top-1/2 -translate-y-1/2 w-[60vw] max-w-none opacity-[0.07]" src="assets/grid-dark.png"/>
+  <div class="relative max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-20 md:py-28">
+    <div class="max-w-2xl mb-14">
+      <span class="block text-[12px] uppercase tracking-[0.22em] text-tartan/70 mb-4">Preparation status</span>
+      <h2 class="font-semibold uppercase tracking-tight leading-[1.08] text-[clamp(1.9rem,4vw,2.9rem)] text-tartan">What remains before we open.</h2>
+      <p class="mt-5 text-[16px] leading-relaxed text-tartan/70">
+        The work is measured, verified and documented — the same way we treat your data.
+        Here is exactly where the platform stands today.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+      <!-- Stages -->
+      <div class="lg:col-span-7">
+        <!-- OVERALL PROGRESS BAR (68%) — disabled -->
+        <!--
+        <div class="flex justify-between items-baseline mb-3">
+          <span class="text-[12px] uppercase tracking-[0.2em] text-tartan/70">Overall progress</span>
+          <span class="text-[15px] font-semibold text-tartan">68%</span>
+        </div>
+        <div class="w-full h-1.5 bg-tartan/10 mb-10">
+          <div class="h-full bg-mint" style="width: 68%"></div>
+        </div>
+        -->
+        <!-- STATUS LIST — list active; update badges (Complete / In progress / Scheduled) disabled -->
+        <ul class="border-t border-tartan/12">
+          <li class="flex justify-between items-center gap-4 py-4 px-3 border-b border-tartan/12 hover:bg-tartan/[0.03] transition-colors">
+            <span class="text-[15px] text-tartan">            <span class="text-[12px] tracking-[0.16em] text-tartan/70 mr-4">01</span>Carbon ledger &amp; factor library</span>
+            <!-- <span class="text-[11px] uppercase tracking-[0.16em] text-tartan/70 shrink-0">Complete</span> -->
+          </li>
+          <li class="flex justify-between items-center gap-4 py-4 px-3 border-b border-tartan/12 hover:bg-tartan/[0.03] transition-colors">
+            <span class="text-[15px] text-tartan">            <span class="text-[12px] tracking-[0.16em] text-tartan/70 mr-4">02</span>Verification protocol &amp; audit trails</span>
+            <!-- <span class="text-[11px] uppercase tracking-[0.16em] text-tartan/70 shrink-0">Complete</span> -->
+          </li>
+          <li class="flex justify-between items-center gap-4 py-4 px-3 border-b border-tartan/12 hover:bg-tartan/[0.03] transition-colors">
+            <span class="text-[15px] text-tartan">            <span class="text-[12px] tracking-[0.16em] text-tartan/70 mr-4">03</span>Emissions data pipelines &amp; integrations</span>
+            <!-- <span class="text-[11px] uppercase tracking-[0.16em] text-mint shrink-0">In progress</span> -->
+          </li>
+          <li class="flex justify-between items-center gap-4 py-4 px-3 border-b border-tartan/12 hover:bg-tartan/[0.03] transition-colors">
+            <span class="text-[15px] text-tartan">            <span class="text-[12px] tracking-[0.16em] text-tartan/70 mr-4">04</span>Reporting studio &amp; exports</span>
+            <!-- <span class="text-[11px] uppercase tracking-[0.16em] text-mint shrink-0">In progress</span> -->
+          </li>
+          <li class="flex justify-between items-center gap-4 py-4 px-3 border-b border-tartan/12 hover:bg-tartan/[0.03] transition-colors">
+            <span class="text-[15px] text-tartan">            <span class="text-[12px] tracking-[0.16em] text-tartan/70 mr-4">05</span>Pilot onboarding &amp; public launch</span>
+            <!-- <span class="text-[11px] uppercase tracking-[0.16em] text-tartan/70 shrink-0">Scheduled</span> -->
+          </li>
+        </ul>
+      </div>
+
+      <!-- Data support -->
+      <div class="lg:col-span-5 lg:pl-10 lg:border-l border-tartan/12 flex flex-col justify-between gap-8">
+        <div class="flex flex-col">
+          <span class="block text-[12px] uppercase tracking-[0.22em] text-tartan/70 mb-6">Sustainable impact</span>
+          <!-- IMPACT STATS (42% / 98.4%) — disabled -->
+          <!--
+          <div class="border-t border-tartan/12 pt-6">
+            <span class="block font-semibold leading-none tracking-tight text-[clamp(3rem,6vw,4.5rem)] text-tartan">42<span class="text-mint">%</span></span>
+            <p class="mt-3 text-[15px] text-tartan/70">Carbon reduction supported across client programs.</p>
+          </div>
+          <div class="border-t border-tartan/12 pt-6 mt-8">
+            <span class="block font-semibold leading-none tracking-tight text-[clamp(3rem,6vw,4.5rem)] text-tartan">98.4<span class="text-mint">%</span></span>
+            <p class="mt-3 text-[15px] text-tartan/70">Verified emissions data behind every report.</p>
+          </div>
+          -->
+        </div>
+        <p class="text-[15px] leading-relaxed text-tartan/70 border-t border-tartan/12 pt-6">
+          “Precision in data leads to clarity in decisions and lasting impact.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLATFORM PILLARS ===================== -->
+<section class="w-full bg-unique text-isabelline" id="platform">
+  <div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-20 md:py-28">
+    <div class="max-w-2xl mb-14">
+      <span class="block text-[12px] uppercase tracking-[0.22em] text-iris mb-4">The platform</span>
+      <h2 class="font-semibold uppercase tracking-tight leading-[1.08] text-[clamp(1.9rem,4vw,2.9rem)]">Three disciplines,<br/>one system.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-8 border border-isabelline/15 hover:border-isabelline/35 transition-colors">
+        <img alt="" aria-hidden="true" class="w-14 h-14 object-contain opacity-90 mb-8" src="assets/measure-light.png"/>
+        <span class="block text-[12px] tracking-[0.16em] text-iris mb-3">01</span>
+        <h3 class="font-semibold uppercase tracking-[0.04em] text-[17px] mb-4">Carbon accounting</h3>
+        <p class="text-[15px] leading-relaxed text-isabelline/75">Ledger-grade tracking across scopes 1, 2 and 3, with auditable emission factors and full version history.</p>
+      </div>
+      <div class="p-8 border border-isabelline/15 hover:border-isabelline/35 transition-colors">
+        <img alt="" aria-hidden="true" class="w-14 h-14 object-contain opacity-90 mb-8" src="assets/target-light.png"/>
+        <span class="block text-[12px] tracking-[0.16em] text-iris mb-3">02</span>
+        <h3 class="font-semibold uppercase tracking-[0.04em] text-[17px] mb-4">Emissions verification</h3>
+        <p class="text-[15px] leading-relaxed text-isabelline/75">Evidence trails and review states that make every figure defensible — to auditors, investors and regulators.</p>
+      </div>
+      <div class="p-8 border border-isabelline/15 hover:border-isabelline/35 transition-colors">
+        <img alt="" aria-hidden="true" class="w-14 h-14 object-contain opacity-90 mb-8" src="assets/grid-light.png"/>
+        <span class="block text-[12px] tracking-[0.16em] text-iris mb-3">03</span>
+        <h3 class="font-semibold uppercase tracking-[0.04em] text-[17px] mb-4">Environmental reporting</h3>
+        <p class="text-[15px] leading-relaxed text-isabelline/75">CSRD, GHG Protocol and investor-ready reports generated directly from verified data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NOTIFY ===================== -->
+<section class="w-full bg-isabelline" id="notify">
+  <div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-20 md:py-28">
+    <div class="max-w-2xl mx-auto text-center">
+      <span class="block text-[12px] uppercase tracking-[0.22em] text-tartan/70 mb-4">Launch list</span>
+      <h2 class="font-semibold uppercase tracking-tight leading-[1.08] text-[clamp(1.9rem,4vw,2.9rem)] text-tartan">Be there the day it opens.</h2>
+      <p class="mt-5 text-[16px] leading-relaxed text-tartan/70">
+        Leave your email and we will send one notice when the platform goes live — with early-access
+        details for pilot teams. No noise, one message.
+      </p>
+      <form class="mt-9 flex flex-col sm:flex-row items-stretch justify-center gap-3" id="notify-form" novalidate="">
+        <label class="sr-only" for="notify-email">Email address</label>
+        <input class="flex-1 min-w-0 px-4 py-4 bg-transparent border border-tartan/25 text-[15px] text-tartan placeholder:text-tartan/55 focus:border-tartan focus:outline-none transition-colors" id="notify-email" placeholder="your@organization.com" required="" type="email"/>
+        <button class="px-8 py-4 bg-tartan text-isabelline text-[13px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-unique" type="submit">Notify me&nbsp;→</button>
+      </form>
+      <p class="mt-4 text-[13px] text-tartan/70" id="notify-message">One notice at launch. Nothing else.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-2">
+        <span class="px-3 py-1.5 border border-tartan/15 text-[11px] uppercase tracking-[0.16em] text-tartan/70">GHG Protocol</span>
+        <span class="px-3 py-1.5 border border-tartan/15 text-[11px] uppercase tracking-[0.16em] text-tartan/70">CSRD ready</span>
+        <span class="px-3 py-1.5 border border-tartan/15 text-[11px] uppercase tracking-[0.16em] text-tartan/70">ISO 14064</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOTTIE + COUNTDOWN LOGIC ===================== -->
+<script>
+  // --- Calibration curve animation (Lottie, with CDN fallbacks) ---
+  const PTS = [[-310, 120], [-170, 75], [-85, 95], [40, 15], [160, 35], [300, -105]];
+  const POP = [60, 78, 96, 114, 132, 150];
+  const fadeOut = [
+    { i: { x: [0.667], y: [1] }, o: { x: [0.333], y: [0] }, t: 215, s: [100] },
+    { t: 238, s: [0] }
+  ];
+  const layerOpacity = (fadeInT, startVal) => {
+    const k = [];
+    if (fadeInT > 0) {
+      k.push({ i: { x: [0.667], y: [1] }, o: { x: [0.333], y: [0] }, t: 0, s: [startVal] });
+      k.push({ i: { x: [0.667], y: [1] }, o: { x: [0.333], y: [0] }, t: fadeInT, s: [100] });
+    } else {
+      k.push({ i: { x: [0.667], y: [1] }, o: { x: [0.333], y: [0] }, t: 0, s: [100] });
+    }
+    return { a: 1, k: k.concat(fadeOut) };
+  };
+  const tr = (extra) => Object.assign({ p: { a: 0, k: [0, 0] }, a: { a: 0, k: [0, 0] }, r: { a: 0, k: 0 }, s: { a: 0, k: [100, 100] }, o: { a: 0, k: 100 } }, extra || {});
+  const linePath = (v) => ({ ty: "sh", d: 1, ks: { a: 0, k: { i: v.map(() => [0, 0]), o: v.map(() => [0, 0]), v: v, c: false } } });
+  const trim = (t0, t1) => ({
+    ty: "tm", s: { a: 0, k: 0 },
+    e: { a: 1, k: [
+      { i: { x: [0.65], y: [1] }, o: { x: [0.35], y: [0] }, t: t0, s: [0] },
+      { t: t1, s: [100] }
+    ] },
+    o: { a: 0, k: 0 }, m: 1
+  });
+  const ISAB = [0.957, 0.949, 0.925, 1];
+  const MINT = [0.482, 0.729, 0.251, 1];
+
+  const launchAnimation = {
+    v: "5.9.6", fr: 60, ip: 0, op: 240, w: 800, h: 400,
+    nm: "EvolveEdge Calibration Curve", ddd: 0, assets: [],
+    layers: [
+      // Points + target pulse (top layer)
+      {
+        ddd: 0, ind: 1, ty: 4, nm: "points", sr: 1,
+        ks: { o: layerOpacity(0), r: { a: 0, k: 0 }, p: { a: 0, k: [400, 200, 0] }, a: { a: 0, k: [0, 0, 0] }, s: { a: 0, k: [100, 100, 100] } },
+        ao: 0,
+        shapes: PTS.map((p, idx) => {
+          const last = idx === PTS.length - 1;
+          const t0 = POP[idx];
+          return {
+            ty: "gr", nm: "dot-" + idx, it: [
+              { ty: "el", d: 1, s: { a: 0, k: [last ? 16 : 11, last ? 16 : 11] }, p: { a: 0, k: p } },
+              { ty: "fl", c: { a: 0, k: last ? MINT : ISAB }, o: { a: 0, k: 100 }, r: 1 },
+              tr({
+                a: { a: 0, k: p },
+                p: { a: 0, k: p },
+                s: { a: 1, k: [
+                  { i: { x: [0.16, 0.16], y: [1, 1] }, o: { x: [0.84, 0.84], y: [0, 0] }, t: t0, s: [0, 0] },
+                  { t: t0 + 8, s: [100, 100] }
+                ] },
+                o: { a: 1, k: [
+                  { i: { x: [0.667], y: [1] }, o: { x: [0.333], y: [0] }, t: t0, s: [0] },
+                  { i: { x: [0.667], y: [1] }, o: { x: [0.333], y: [0] }, t: t0 + 8, s: [100] }
+                ] }
+              })
+            ]
+          };
+        }).concat([
+          // Pulse ring on the final point
+          {
+            ty: "gr", nm: "pulse", it: [
+              { ty: "el", d: 1, s: { a: 0, k: [22, 22] }, p: { a: 0, k: PTS[PTS.length - 1] } },
+              { ty: "st", c: { a: 0, k: MINT }, o: { a: 0, k: 100 }, w: { a: 0, k: 2 }, lc: 1, lj: 1 },
+              tr({
+                a: { a: 0, k: PTS[PTS.length - 1] },
+                p: { a: 0, k: PTS[PTS.length - 1] },
+                s: { a: 1, k: [
+                  { i: { x: [0.16, 0.16], y: [1, 1] }, o: { x: [0.84, 0.84], y: [0, 0] }, t: 155, s: [100, 100] },
+                  { t: 235, s: [300, 300] }
+                ] },
+                o: { a: 1, k: [
+                  { i: { x: [0.667], y: [1] }, o: { x: [0.333], y: [0] }, t: 155, s: [100] },
+                  { t: 235, s: [0] }
+                ] }
+              })
+            ]
+          }
+        ]),
+        ip: 0, op: 240, st: 0, bm: 0
+      },
+      // Calibration curve (drawn)
+      {
+        ddd: 0, ind: 2, ty: 4, nm: "curve", sr: 1,
+        ks: { o: layerOpacity(0), r: { a: 0, k: 0 }, p: { a: 0, k: [400, 200, 0] }, a: { a: 0, k: [0, 0, 0] }, s: { a: 0, k: [100, 100, 100] } },
+        ao: 0,
+        shapes: [{
+          ty: "gr", nm: "curve-line", it: [
+            linePath(PTS),
+            trim(45, 150),
+            { ty: "st", c: { a: 0, k: ISAB }, o: { a: 0, k: 100 }, w: { a: 0, k: 3 }, lc: 1, lj: 1, ml: 1 },
+            tr()
+          ]
+        }],
+        ip: 0, op: 240, st: 0, bm: 0
+      },
+      // Dimension line
+      {
+        ddd: 0, ind: 3, ty: 4, nm: "dimension", sr: 1,
+        ks: { o: layerOpacity(0), r: { a: 0, k: 0 }, p: { a: 0, k: [400, 200, 0] }, a: { a: 0, k: [0, 0, 0] }, s: { a: 0, k: [100, 100, 100] } },
+        ao: 0,
+        shapes: [{
+          ty: "gr", nm: "dim", it: [
+            linePath([[-320, 170], [340, 170]]),
+            linePath([[-320, 162], [-320, 178]]),
+            linePath([[340, 162], [340, 178]]),
+            trim(150, 195),
+            { ty: "st", c: { a: 0, k: ISAB }, o: { a: 0, k: 38 }, w: { a: 0, k: 1.5 }, lc: 1, lj: 1 },
+            tr()
+          ]
+        }],
+        ip: 0, op: 240, st: 0, bm: 0
+      },
+      // Axes
+      {
+        ddd: 0, ind: 4, ty: 4, nm: "axis", sr: 1,
+        ks: { o: layerOpacity(0), r: { a: 0, k: 0 }, p: { a: 0, k: [400, 200, 0] }, a: { a: 0, k: [0, 0, 0] }, s: { a: 0, k: [100, 100, 100] } },
+        ao: 0,
+        shapes: [{
+          ty: "gr", nm: "axis-line", it: [
+            linePath([[-320, -140], [-320, 140], [340, 140]]),
+            trim(0, 45),
+            { ty: "st", c: { a: 0, k: ISAB }, o: { a: 0, k: 70 }, w: { a: 0, k: 2.5 }, lc: 1, lj: 1, ml: 1 },
+            tr()
+          ]
+        }],
+        ip: 0, op: 240, st: 0, bm: 0
+      },
+      // Faint chart grid
+      {
+        ddd: 0, ind: 5, ty: 4, nm: "grid", sr: 1,
+        ks: { o: layerOpacity(30, 0), r: { a: 0, k: 0 }, p: { a: 0, k: [400, 200, 0] }, a: { a: 0, k: [0, 0, 0] }, s: { a: 0, k: [100, 100, 100] } },
+        ao: 0,
+        shapes: [{
+          ty: "gr", nm: "grid-lines", it: [
+            linePath([[-320, -110], [340, -110]]),
+            linePath([[-320, -40], [340, -40]]),
+            linePath([[-320, 30], [340, 30]]),
+            linePath([[-320, 100], [340, 100]]),
+            { ty: "st", c: { a: 0, k: ISAB }, o: { a: 0, k: 10 }, w: { a: 0, k: 1 }, lc: 1, lj: 1 },
+            tr()
+          ]
+        }],
+        ip: 0, op: 240, st: 0, bm: 0
+      }
+    ]
+  };
+
+  function startLottie() {
+    const container = document.getElementById('lottie-plate');
+    if (!container || typeof lottie === 'undefined') return false;
+    try {
+      lottie.loadAnimation({
+        container: container,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        animationData: launchAnimation,
+        rendererSettings: { preserveAspectRatio: 'xMidYMid meet' }
+      });
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function loadLottie(urls, i) {
+    if (i >= urls.length) {
+      document.getElementById('fallback-plate').classList.remove('hidden');
+      return;
+    }
+    const s = document.createElement('script');
+    s.src = urls[i];
+    s.onload = () => { if (!startLottie()) loadLottie(urls, i + 1); };
+    s.onerror = () => loadLottie(urls, i + 1);
+    document.head.appendChild(s);
+  }
+
+  // --- Countdown to public launch ---
+  const LAUNCH = new Date('2026-12-01T09:00:00+01:00').getTime();
+  const pad = (n) => String(Math.max(0, n)).padStart(2, '0');
+  function tickCountdown() {
+    const diff = LAUNCH - Date.now();
+    const els = {
+      days: document.getElementById('cd-days'),
+      hours: document.getElementById('cd-hours'),
+      minutes: document.getElementById('cd-minutes'),
+      seconds: document.getElementById('cd-seconds')
+    };
+    if (!els.days) return;
+    if (diff <= 0) {
+      els.days.textContent = '00'; els.hours.textContent = '00';
+      els.minutes.textContent = '00'; els.seconds.textContent = '00';
+      return;
+    }
+    els.days.textContent = pad(Math.floor(diff / 86400000));
+    els.hours.textContent = pad(Math.floor(diff / 3600000) % 24);
+    els.minutes.textContent = pad(Math.floor(diff / 60000) % 60);
+    els.seconds.textContent = pad(Math.floor(diff / 1000) % 60);
+  }
+
+  // --- Launch-list form micro-interaction ---
+  document.addEventListener('DOMContentLoaded', () => {
+    loadLottie([
+      'https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js'
+    ], 0);
+
+    // COUNTDOWN — disabled (launch date unconfirmed); re-enable by uncommenting:
+    // tickCountdown();
+    // setInterval(tickCountdown, 1000);
+
+    const form = document.getElementById('notify-form');
+    const email = document.getElementById('notify-email');
+    const message = document.getElementById('notify-message');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+      if (!valid) {
+        email.classList.add('border-tartan');
+        email.classList.remove('border-iris');
+        message.textContent = 'Please enter a valid email address.';
+        return;
+      }
+      email.classList.remove('border-tartan');
+      message.textContent = 'You are on the list. We will write once — when the platform opens.';
+      form.reset();
+    });
+  });
+</script>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="w-full bg-unique text-isabelline">
+  <div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-gutter-desktop pb-space-xl border-b border-isabelline/12">
+      <div class="lg:col-span-2 space-y-space-md pr-space-md">
+        <img alt="Evolve Edge Services logo" class="h-8 w-auto object-contain" src="assets/logo-h-light.png"/>
+        <p class="text-[14px] leading-relaxed text-isabelline/70 max-w-sm">
+          A sustainability and ESG consulting company focused on carbon accounting, emissions
+          verification and data-driven environmental reporting.
+        </p>
+        <div class="pt-1">
+          <p class="text-[11px] uppercase tracking-[0.2em] text-isabelline/50 mb-2">General enquiries</p>
+          <a class="text-[14px] text-isabelline underline underline-offset-4 decoration-isabelline/30 hover:decoration-isabelline transition-colors" href="mailto:procurement@evolveedge.com">procurement@evolveedge.com</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-[12px] font-medium uppercase tracking-[0.16em] text-isabelline mb-5">Platform</p>
+        <ul class="space-y-3 text-[14px] text-isabelline/65">
+          <li><a class="hover:text-isabelline transition-colors" href="#platform">Carbon accounting</a></li>
+          <li><a class="hover:text-isabelline transition-colors" href="#platform">Emissions verification</a></li>
+          <li><a class="hover:text-isabelline transition-colors" href="#platform">Environmental reporting</a></li>
+          <li><a class="hover:text-isabelline transition-colors" href="#status">Preparation status</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-[12px] font-medium uppercase tracking-[0.16em] text-isabelline mb-5">Company</p>
+        <ul class="space-y-3 text-[14px] text-isabelline/65">
+          <li><a class="hover:text-isabelline transition-colors" href="#">About us</a></li>
+          <li><a class="hover:text-isabelline transition-colors" href="#">Methodology</a></li>
+          <li><a class="hover:text-isabelline transition-colors" href="#notify">Contact</a></li>
+          <li><a class="hover:text-isabelline transition-colors" href="#notify">Launch list</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <p class="text-[12px] font-medium uppercase tracking-[0.16em] text-isabelline mb-5">Standards we work to</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 border border-isabelline/20 text-[11px] uppercase tracking-[0.14em] text-isabelline/70">GHG Protocol</span>
+          <span class="px-3 py-1.5 border border-isabelline/20 text-[11px] uppercase tracking-[0.14em] text-isabelline/70">CSRD</span>
+          <span class="px-3 py-1.5 border border-isabelline/20 text-[11px] uppercase tracking-[0.14em] text-isabelline/70">ISO 14064</span>
+          <span class="px-3 py-1.5 border border-isabelline/20 text-[11px] uppercase tracking-[0.14em] text-isabelline/70">SBTi</span>
+        </div>
+      </div>
+    </div>
+    <div class="pt-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <p class="text-[12px] uppercase tracking-[0.14em] text-isabelline/50">© 2026 Evolve Edge Services. All rights reserved.</p>
+      <div class="flex flex-wrap gap-6 text-[12px] uppercase tracking-[0.14em] text-isabelline/50">
+        <a class="hover:text-isabelline transition-colors" href="#">Privacy policy</a>
+        <a class="hover:text-isabelline transition-colors" href="#">Terms of use</a>
+        <a class="hover:text-isabelline transition-colors" href="#">Environmental transparency</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
